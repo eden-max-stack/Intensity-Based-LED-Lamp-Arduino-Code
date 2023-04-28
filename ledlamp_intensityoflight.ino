@@ -19,7 +19,7 @@ void loop() {
   Serial.print(data);
   delay(100);  //every 100 ms, data collected by the ldr is submitted to the arduino. if the value in the delay() command value is changed, the speed with which the led colors change also changes.
 
-  if (data>750) {  //violet color
+  if (data>750) {  //violet color     //750 is used because it is the approximate value i get when i subject my LDR to my flashlight
     analogWrite(blueled1, 127);
     digitalWrite(greenled2, LOW);
     analogWrite(redled3, 127);
